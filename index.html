@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Dataset Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .highlight {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Football Dataset Viewer</h1>
+        <p>Explore teams, leagues, matches, and countries</p>
+    </header>
+    <main>
+        <section id="teams">
+            <h2>Teams</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Team API ID</th>
+                        <th>FIFA API ID</th>
+                        <th>Team Name</th>
+                        <th>Short Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+        <section id="leagues">
+            <h2>Leagues</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Country ID</th>
+                        <th>League Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+        <section id="matches">
+            <h2>Matches</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Country ID</th>
+                        <th>League ID</th>
+                        <th>Season</th>
+                        <th>Stage</th>
+                        <th>Date</th>
+                        <th>Home Team</th>
+                        <th>Away Team</th>
+                        <th>Home Goals</th>
+                        <th>Away Goals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+        <section id="countries">
+            <h2>Countries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Country Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
