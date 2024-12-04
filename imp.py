@@ -33,6 +33,13 @@ def execute_query(query, params=None):
 
 # Streamlit App
 def main():
+    # Add custom CSS to hide the GitHub icon
+    hide_github_icon = """
+    #GithubIcon {
+      visibility: hidden;
+    }
+    """
+    st.markdown(hide_github_icon, unsafe_allow_html=True)
     st.title("Football Database Application")
 
     # Sidebar for navigation
